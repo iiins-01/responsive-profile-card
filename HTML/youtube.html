@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+.sub{
+        background: rgb(56.458% 0.14033 22.63);
+        color: aliceblue;
+        border-radius: 2px;
+        border: none;
+        height: 30px;
+        width: 105px;
+        cursor: pointer;
+        /* transition 1st kis ko deni hy or 2nd value of timing k kb tk rhy gi */
+        transition: opacity 1s;
+    }
+.image{
+        height: 150px;
+        width: 200px;
+        object-fit: cover;
+        display: block;
+
+
+    }
+
+.sub:hover{
+/* it is a pseudo class that basically means adding extra styling in a certain situations */
+/* opacity will last in betweeen 0 and 1 */
+        opacity: 0.7;
+    }
+
+.sub:hover:active{
+/* this means when we click what it must look like back then */
+        opacity:0.4;
+    }
+
+.jon{
+        background-color: white;
+        border-color:rgb(41,118,211);
+        border-style: solid;
+        border-width: 2px;
+        cursor: pointer;
+        color: rgb(41,118,211);
+        border-radius: 2px;
+        height: 36px;
+        width: 62px;
+        transition: background-color 1s , color 1s ;
+    }
+
+    .jon:hover{
+        color:white;
+        background-color:rgb(41,118,211);;
+    }
+
+    .jon:active{
+        opacity: 0.7;
+            
+    }
+    
+    
+    .twt{
+        background: #24abd0;
+        cursor: pointer;
+        border-color:#24abd0;
+        border-style: solid;
+        color: azure;
+        height: 36px;
+        width: 74px;
+        margin-left: 8px;
+        border-radius: 18px;
+        border:none;
+        font-weight: bold;
+       /* for shadow horizontal vertical blurness color */
+        transition: background-color 0.15s;
+        color: 0.15s; 
+    }
+    .twt:hover{
+        box-shadow: 5px 5px 5px;
+
+    }
+    .twt:active{
+        opacity: 0.3;
+    }
+     .title{
+        font-family: Arial;
+        font-size: 18px;
+        width: 300px;
+        font-weight: bold;
+        line-height: 24px;
+    
+    }
+    .stats{
+        font-family: arial;
+        font-size: 14px;
+        color: grey;
+    }
+
+.athr{
+    font-family: arial;
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+    margin-top:0 ;
+}
+
+.description{
+    font-family: arial;
+    color: grey;
+}
+
+.text{
+    margin-bottom: 50px;
+    font-size: 14px;
+    background-color: rgb(227, 65, 64);
+    color: white;
+    text-align: center;
+    padding-top: 18px;
+    /* ading space within the inside is padding */
+    padding-bottom: 18px;
+    text-decoration: underline;
+}
+.henry{
+    height: 150px;
+        width: 200px;
+        object-fit: cover;
+        display: block;
+}
+
+.span-example{
+    color: red;
+}
+
+.span-example:hover{
+    text-decoration: underline;
+}
+.nth{
+    font: bolder
+}
+
+.search{
+    width: 30px;
+    width: 200px;
+}
+.mood{
+    display: inline;
+    width: 500px;
+    height: 25px;
+    border-radius: 20px;
+}
+.dioone{
+    display: inline;
+}
+.main{
+    display: flex;
+}
+.ft{
+    height: 150px;
+        width: 200px;
+        object-fit: cover;
+        display: block;
+}
+.cs{
+    height: 150px;
+        width: 200px;
+        object-fit: cover;
+        display: block;
+}
+.pink{
+    height: 150px;
+        width: 200px;
+        object-fit: cover;
+        display: block;
+}
+.news{
+     height: 150px;
+        width: 200px;
+        object-fit: cover;
+        display: block;
+}
+.maintwo{
+    display: flex;
+}
+
+.shorts-section {
+      padding: 20px;
+    }
+
+.shorts-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+.shorts-container {
+      display: flex;
+      gap: 15px;
+      padding-bottom: 10px;
+    }
+
+.sh{
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      cursor: pointer;
+    }
+    .man{
+        height: 300px;
+        width: 150px;
+    }
+</style>
+
+<input class="mood" type="text" name="search" placeholder= "&#128269 new to you!"> 
+<button class="sub">SUBSCRIBE</button>
+<button class="jon">join</button>
+<button class="twt">tweet</button>
+
+<div class="main">
+    <div class="divone">
+    <p class="title">
+    Talking Tech Ai Sundar Pichai!
+</p>
+
+<img class="image" src="https://tse1.mm.bing.net/th/id/OIP.VtcgCakwFFbyQFHZcLxsfgHaE7?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+
+<input class="search" type="text" placeholder=" &#128269 search sundar pichai tech">
+
+<p class="stats">
+    <!-- html entity middle dot -->
+   3.4M veiws &#183; 6 months ago
+</p>
+<p class="athr">
+    marques brownie &#10003;
+</p>
+</div>
+
+<div class="divtwo">
+    <p class="title">
+    horrid henry cartoon 2026
+</p>
+<img class="henry" src="https://artworks.thetvdb.com/banners/series/81669/backgrounds/62078844.jpg" alt="">
+<input class="search" type="text" placeholder=" &#128269 search new episode ">
+
+<p class="stats">
+    <!-- html entity middle dot -->
+   4M veiws &#183; 1 hour ago
+</p>
+<p class="athr">
+ prime video &#10003;
+</p>
+</div>
+
+
+
+<div class="divone">
+    <p class="title">
+    CS302 SHORT LECTURES
+</p>
+
+<img class="cs" src="https://th.bing.com/th/id/OIP.e0QhbiC1uQ6EUYNRkq3PQgHaEK?w=295&h=180&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3" alt="">
+<input class="search" type="text" placeholder=" &#128269 search sundar pichai tech">
+
+<p class="stats">
+    <!-- html entity middle dot -->
+   3.4M veiws &#183; 6 months ago
+</p>
+<p class="athr">
+    kst learning &#10003;
+</p>
+</div>
+</div>
+<div  class="main two">
+    <div class="divtwo">
+    <p class="title">
+    NEWS HEADLINES
+</p>
+<img class="news" src="https://s1.dmcdn.net/v/YLvWs1e6MIHCbGBbn/x720" alt="">
+<input class="search" type="text" placeholder=" &#128269 search ongoing events ">
+
+<p class="stats">
+    <!-- html entity middle dot -->
+   4M veiws &#183; 1 hour ago
+</p>
+<p class="athr">
+ ARY news &#10003;
+</p>
+</div>
+
+<div class="divthree">
+    <p class="title">
+    Zindagi hy kitni haseen 2.0
+</p>
+<img class="ft" src="https://propakistani.pk/lens/wp-content/uploads/2023/11/sukoon-1.jpg" alt="">
+<input class="search" type="text" placeholder=" &#128269 search FT SHAE GILL ">
+
+<p class="stats">
+    <!-- html entity middle dot -->
+   11 M veiws &#183; 36 min ago
+</p>
+<p class="athr">
+ coke studio &#10003;
+</p>
+</div>
+
+<div class="divthree">
+    <p class="title">
+    pink panther upcoming!
+</p>
+<img class="pink" src="https://th.bing.com/th?&id=OVP.y_xGguOwjxJq8LKlHM-D5QHgFo&w=328&h=183&c=7&pid=2.1&rs=1" alt="">
+<input class="search" type="text" placeholder=" &#128269 search pink panther ">
+
+<p class="stats">
+    <!-- html entity middle dot -->
+   11 M veiws &#183; 36 min ago
+</p>
+<p class="athr">
+ pogo &#10003;
+</p>
+</div>
+</div>
+<div class="shorts-section">
+    <div class="shorts-title">Shorts</div>
+    
+    <div class="shorts-container">
+      <div class="sh">
+    <img class="man" src=http://tse3.mm.bing.net/th?id=OIP.ERIzYjmK-nU8idwUpdDRAgHaKc alt="">
+        <p><input type="text" placeholder="  &#128269 search"></p>
+      </div>
+      <div>
+  <img class="man" src="http://tse3.mm.bing.net/th?id=OIP.FjDu5t4r_RAiDSRrn5_kOAHaNK" alt="">
+          <p><input type="text" placeholder=" &#128269 search"></p>
+
+      </div>
+      <div>
+       <img class="man" src=http://tse3.mm.bing.net/th?id=OIP.JXf1nL7d5VICwCGnWYB6AgHaJQ alt="">
+        <p><input type="text" placeholder=" &#128269 search"></p>
+      </div>
+      <div class="sh">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VIKZMdOx-9M?si=kWM9VDrMoAdZre0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        <p><input type="text" placeholder=" &#128269 search"></p>
+      </div>
+    </div>
+  </div>
+
+<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium odio molestiae minima itaque architecto repudiandae debitis culpa nobis non perferendis illum doloremque iste omnis porro consequatur ipsum, voluptate eos? At.
+
+</p>
+<p class="text">
+    shop early for the best selection of holiday fourites. shop now &#62;
+</p>
+<p>
+    <!-- span to give just shop now a color red -->
+    shop early for the <strong>best selection</strong>of <u>holiday</u>
+    faourites. <span style="color: red;">shop now</span>
+</p>
+<nav></nav>
+    
+</body>
+</html>

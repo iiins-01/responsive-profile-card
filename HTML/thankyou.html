@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Popup</title>
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:sans-serif;
+}
+
+.container{
+  width:100%;
+  height:100vh;
+  background:rgb(221,185,255);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.btn{
+  padding:10px 60px;
+  background:#d38989;
+  border:0;
+  cursor:pointer;
+  font-size:22px;
+  border-radius:30px;
+  color:white;
+}
+
+/* popup hidden by default */
+.popup{
+  width:400px;
+  background:#fff;
+  border-radius:6px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  text-align:center;
+  padding:20px;
+  color:#333;
+
+  display:none;
+}
+
+.popup.open-popup {
+  display: block;
+}
+
+.popup img{
+  width:100px;
+  margin-top:-50px;
+  border-radius:50%;
+}
+
+.popup h2{
+  font-size:38px;
+  margin:30px 0 10px;
+}
+
+.popup button{
+  width:100%;
+  margin-top:20px;
+  padding:10px 0;
+  background:#6fd649;
+  color:white;
+  font-size:18px;
+  border:none;
+  border-radius:4px;
+  cursor:pointer;
+}
+
+@keyframes slideDown {
+  from {
+    top: -100px;
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    opacity: 1;
+  }
+}
+
+.open-popup {
+  animation: slideDown 0.5s ease-out;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <button class="btn" onclick="openpopup()">Submit</button>
+</div>
+
+<div class="popup" id="popup">
+
+  <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png">
+
+  <h2>THANK YOU</h2>
+  <p>Form has been successfully submitted.</p>
+
+  <button onclick="closepopup()">OK</button>
+
+</div>
+
+<script src="thankyou.js"></script>
+
+<script>
+
+let popup = document.getElementById("popup");
+function openpopup(){
+  popup.classList.add("open-popup");
+}
+function closepopup(){
+  popup.style.display = "none";
+}
+</script>
+</body>
+</html>

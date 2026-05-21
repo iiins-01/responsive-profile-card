@@ -1,0 +1,151 @@
+:root{
+    --color:blue;
+}
+
+    .mn{
+        background-color: var(--color);
+    }
+    
+    
+    .static{
+        position: static;
+        background-color: rgb(150, 11, 115);
+        display: inline;
+    }
+    .relative{
+        position: relative;  
+        left: 30px;
+        background-color: rgb(50, 110, 162);
+        display: inline;
+    }
+    .fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  background-color: rgb(85, 85, 7);
+  height: 200px;
+  display: inline;
+    }
+    .rltv {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  background-color: rgb(110, 110, 223);
+} 
+
+.bslt {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  background-color: rgb(32, 22, 42);
+}
+.container {
+      position: relative; /* This makes it the reference point */
+      width: 300px;
+      height: 200px;
+      background: lightgray;
+      margin: 20px;
+    }
+
+    .absolute-box {
+      position: absolute; /* Positioned relative to .container */
+      top: 50px;   /* 50px from the top of container */
+      left: 60px;  /* 60px from the left of container */
+      background: lightcoral;
+      padding: 10px;
+    }
+
+    .no-container {
+      position: absolute; /* No ancestor with position set */
+      top: 20px;
+      right: 20px;
+      background: gold;
+      padding: 10px;
+      transition: all 4s cubic-bezier(.19,.66,.73,.37);
+
+      animation: anime;
+      animation-duration: 3s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+    }
+
+    .no-container:hover{
+        background: none;
+        border:  4px solid gold;
+        border-radius: 30px;
+        transform: skew(50deg);
+    }
+    /* Sticky header */
+    header {
+      position: sticky;
+      background: #333;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    /* Static section */
+    .intro {
+      position: static;
+      background: rgb(203, 154, 47);
+      padding: 20px;
+    }
+
+    /* Relative container */
+    .card {
+      position: relative; /* parent for absolute child */
+      width: 300px;
+      height: 200px;
+      background: #246d3f;
+    }
+
+    /* Absolute element inside card */
+    .badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: crimson;
+      color: white;
+      font-size: 12px;
+    }
+
+    /* Fixed footer */
+    footer {
+      position: fixed;
+      width: 100%;
+      background: #176579;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    @keyframes anime {
+
+        0%{
+
+        }
+
+        50%{
+transform: scale(1.5);
+        }
+
+        100%{
+
+            transform: scale(1);
+            /* scaling means enlargement  */
+
+        }
+        
+    }
+
+    @media (max-width:500px) {
+
+        .no-container{
+            background: #000;
+        }
+        
+    }
+

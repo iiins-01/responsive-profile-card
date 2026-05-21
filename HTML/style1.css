@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>css styling</title>
+  <style>
+    body {
+      background-color: #6e713ce7; 
+    }
+
+    h1 {
+      color: #2e8b57; 
+      text-align: center;
+      background-color: #ebf0ed;
+      margin: 1;
+    }
+
+    p {
+      color: #27461f;
+      font-size: 18px;
+      background-color: #ebf0ed;
+      margin: 1;
+    }
+
+    button {
+      background-color: #2e8b57;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #3cb371;
+       
+    }
+  </style>
+</head>
+<body>
+  <h1>ciao</h1>
+  <p>welcome home.</p>
+  <button>Click here</button>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Transitions in css</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 150px;
+      /* original cola */
+      background: rgb(143, 198, 217);
+    
+
+      transition-duration: 2s;
+    }
+    .box:hover {
+      width: 300px;
+      height: 300px;
+      /* pichko cola */
+      background: rgb(141, 216, 111);
+      /* when hover it will enlarge the same way as duration in transition has been given */
+    }
+    .dibba{
+        background-color: rgb(235, 157, 123);
+    }
+    .a{
+         width: 200px;
+         height: 150px;
+         margin: 50px;
+         background-color: rgb(235, 157, 123);
+
+    }
+    .a:hover{
+        transform: translate(100px);
+        /* it will move forward */
+        transition: 2s;
+    }
+    .b{
+         width: 200px;
+         height: 150px; 
+         margin: 50px;
+         background-color: rgb(215, 163, 141);
+
+    }
+    .b:hover{
+        transform:rotate(360deg) ;
+        /* rotation of the whole */
+        transition:2s ;
+    }
+    .c{
+         width: 200px;
+         height: 150px;
+         margin: 50px;
+         background-color: rgb(112, 34, 0);
+
+    }
+    .c:hover{
+        transform:rotateX(360deg) ;
+        /* flip vertically */
+        transition:2s ;
+    }
+    .d{
+         width: 200px;
+         height: 150px;
+         margin: 50px;
+         background-color: rgb(235, 157, 123);
+
+    }
+    .d:hover{
+        transform:rotateY(360deg) ;
+        /* flip horizontally */
+        transition:2s ;
+    }
+    .e{
+         width: 200px;
+         height: 150px;
+         margin: 50px;
+         background-color: rgb(122, 39, 3);
+
+    }
+    .e:hover{
+        transform:scale(1.5) ;
+        /* enlarge */
+        transition:2s ;
+    }
+    .f{
+      width: 200px;
+      height: 150px;
+      margin: 50px;
+      background-color: rgb(215, 158, 134);
+    }
+    .f:hover{
+      transform: skew(30deg);
+      /* inclind pull */
+      transition: 2s;
+    }
+    .baap{
+      display: flex;
+    }
+    .button{
+      width: 90px;
+      height: 90px;
+      border-radius: 30px;
+      border: solid;
+    }
+    .button:hover {
+    background-color: rgb(162, 98, 98);
+    padding: 20px;
+    /* starts slow then biru bhagy ga */
+    transition: ease-in;
+    transition-duration: 3s;
+   }
+  </style>
+</head>
+<body>
+  <h2 class="dibba">Basic CSS Transition</h2>
+  <div class="baap">
+    <div class="box"></div>
+  <div class="a"></div>
+  <div class="b"></div>
+  <div class="c"></div>
+  <div class="d"></div>
+  <div class="e"></div>
+  <div class="f"></div>
+  </div>
+  <h2>timing function in css</h2>
+  <h3>ease in</h3>
+  <button class="button"></button>
+</body>
+</html>

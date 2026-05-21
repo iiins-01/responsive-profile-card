@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile Card UI</title>
+
+  <style>
+
+    *{
+        /* *used to select all the elements in the page and apply the same styles to them */
+
+      box-sizing:border-box;
+      font-family:sans-serif;
+    }
+    body{
+      height:100vh;
+      /* vh is used to set the height of the element to 1% of the viewport height */
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      /* justify centre is used to center the content horizontally in the container */
+      background:linear-gradient(135deg,#51395f,#5a2a4a);
+    }
+    .card{
+      width:320px;
+      background:white;
+      border-radius:20px;
+      /* padding is bascially used to create space between the content and the border of the element */
+      padding:30px;
+      text-align:center;
+      box-shadow:0 10px 30px rgba(0,0,0,0.2);
+      transition:0.4s;
+    }
+    .profile-img{
+      width:120px;
+      height:120px;
+      border-radius:50%;
+      object-fit:cover;
+      border:5px solid #452757;
+      margin-bottom:20px;
+    }
+
+    h2{
+      color:#333;
+      margin-bottom:10px;
+    }
+
+    p{
+      color:gray;
+      font-size:15px;
+      margin-bottom:20px;
+    }
+
+    .btn{
+      display:inline-block;
+      text-decoration:none;
+      background:#412e4c;
+      color:white;
+      padding:12px 25px;
+      border-radius:30px;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#3d2950;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <div class="card">
+
+    <img 
+      src="image copy/atqawal.jpeg" 
+      class="profile-img"
+    >
+
+    <h2> INSHA safdar</h2>
+
+    <p>
+     Frontend Developer learning HTML & CSS.
+    </p>
+
+    <a href="#" class="btn">
+      Follow
+    </a>
+
+  </div>
+
+</body>
+</html>

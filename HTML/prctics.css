@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+h1{
+    color: aliceblue;
+    background-color: pink;
+    width: 500px;
+    text-align: center;
+    word-spacing: 100px;
+    text-shadow: -30px -40px 10px rgb(24, 24, 34);
+    padding: 50px;
+    border: 10px solid black;
+    border-radius: 20px;
+    margin: 1
+    50px;
+}
+
+
+h1:hover{
+    color: rgb(4, 12, 19);
+    background-color: rgb(212, 13, 46);
+    width: 500px;
+    text-align: center;
+    word-spacing: 100px;
+    text-shadow: -30px -40px 10px rgb(24, 24, 34);
+    padding: 50px;
+}
+div:hover{
+    background-color: brown;
+}
+span{
+    background-color: black;
+}
+
+    </style>
+    <div>
+    <h1>heloo</h1>
+    <h1> <span>Insha's</span>  Website</h1>
+    <h2>Helo</h2>
+    </div>
+
+
+
+</body>
+</html>
